@@ -3,24 +3,32 @@
   "WorkspaceRootPath": "D:\\Scripts\\PublicTracker\\StarCitizenTracker\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{70F6D780-AE60-4BB5-9DDF-9C7807F66EBB}|StarCitizenTracker.csproj|d:\\scripts\\publictracker\\starcitizentracker\\config.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{70F6D780-AE60-4BB5-9DDF-9C7807F66EBB}|StarCitizenTracker.csproj|solutionrelative:config.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{70F6D780-AE60-4BB5-9DDF-9C7807F66EBB}|StarCitizenTracker.csproj|d:\\scripts\\publictracker\\starcitizentracker\\processor\\feedprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70F6D780-AE60-4BB5-9DDF-9C7807F66EBB}|StarCitizenTracker.csproj|solutionrelative:processor\\feedprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70F6D780-AE60-4BB5-9DDF-9C7807F66EBB}|StarCitizenTracker.csproj|d:\\scripts\\publictracker\\starcitizentracker\\services\\logmonitorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{70F6D780-AE60-4BB5-9DDF-9C7807F66EBB}|StarCitizenTracker.csproj|d:\\scripts\\publictracker\\starcitizentracker\\processor\\mainfeedprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70F6D780-AE60-4BB5-9DDF-9C7807F66EBB}|StarCitizenTracker.csproj|solutionrelative:processor\\mainfeedprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F6D780-AE60-4BB5-9DDF-9C7807F66EBB}|StarCitizenTracker.csproj|d:\\scripts\\publictracker\\starcitizentracker\\services\\defaultstringformatter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70F6D780-AE60-4BB5-9DDF-9C7807F66EBB}|StarCitizenTracker.csproj|solutionrelative:services\\defaultstringformatter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F6D780-AE60-4BB5-9DDF-9C7807F66EBB}|StarCitizenTracker.csproj|d:\\scripts\\publictracker\\starcitizentracker\\processor\\secondaryfeedprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70F6D780-AE60-4BB5-9DDF-9C7807F66EBB}|StarCitizenTracker.csproj|solutionrelative:processor\\secondaryfeedprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F6D780-AE60-4BB5-9DDF-9C7807F66EBB}|StarCitizenTracker.csproj|D:\\Scripts\\PublicTracker\\StarCitizenTracker\\services\\logmonitorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{70F6D780-AE60-4BB5-9DDF-9C7807F66EBB}|StarCitizenTracker.csproj|solutionrelative:services\\logmonitorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70F6D780-AE60-4BB5-9DDF-9C7807F66EBB}|StarCitizenTracker.csproj|d:\\scripts\\publictracker\\starcitizentracker\\services\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{70F6D780-AE60-4BB5-9DDF-9C7807F66EBB}|StarCitizenTracker.csproj|D:\\Scripts\\PublicTracker\\StarCitizenTracker\\services\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{70F6D780-AE60-4BB5-9DDF-9C7807F66EBB}|StarCitizenTracker.csproj|solutionrelative:services\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70F6D780-AE60-4BB5-9DDF-9C7807F66EBB}|StarCitizenTracker.csproj|D:\\Scripts\\PublicTracker\\StarCitizenTracker\\services\\secondaryfeedprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70F6D780-AE60-4BB5-9DDF-9C7807F66EBB}|StarCitizenTracker.csproj|solutionrelative:services\\secondaryfeedprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70F6D780-AE60-4BB5-9DDF-9C7807F66EBB}|StarCitizenTracker.csproj|d:\\scripts\\publictracker\\starcitizentracker\\services\\mainfeedprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70F6D780-AE60-4BB5-9DDF-9C7807F66EBB}|StarCitizenTracker.csproj|solutionrelative:services\\mainfeedprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{70F6D780-AE60-4BB5-9DDF-9C7807F66EBB}|StarCitizenTracker.csproj|d:\\scripts\\publictracker\\starcitizentracker\\config.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{70F6D780-AE60-4BB5-9DDF-9C7807F66EBB}|StarCitizenTracker.csproj|solutionrelative:config.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,6 +43,58 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "FeedProcessor.cs",
+              "DocumentMoniker": "D:\\Scripts\\PublicTracker\\StarCitizenTracker\\Processor\\FeedProcessor.cs",
+              "RelativeDocumentMoniker": "Processor\\FeedProcessor.cs",
+              "ToolTip": "D:\\Scripts\\PublicTracker\\StarCitizenTracker\\Processor\\FeedProcessor.cs",
+              "RelativeToolTip": "Processor\\FeedProcessor.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T13:59:09.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SecondaryFeedProcessor.cs",
+              "DocumentMoniker": "D:\\Scripts\\PublicTracker\\StarCitizenTracker\\Processor\\SecondaryFeedProcessor.cs",
+              "RelativeDocumentMoniker": "Processor\\SecondaryFeedProcessor.cs",
+              "ToolTip": "D:\\Scripts\\PublicTracker\\StarCitizenTracker\\Processor\\SecondaryFeedProcessor.cs",
+              "RelativeToolTip": "Processor\\SecondaryFeedProcessor.cs",
+              "ViewState": "AgIAALcAAAAAAAAAAAAAANAAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T13:49:14.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DefaultStringFormatter.cs",
+              "DocumentMoniker": "D:\\Scripts\\PublicTracker\\StarCitizenTracker\\Services\\DefaultStringFormatter.cs",
+              "RelativeDocumentMoniker": "Services\\DefaultStringFormatter.cs",
+              "ToolTip": "D:\\Scripts\\PublicTracker\\StarCitizenTracker\\Services\\DefaultStringFormatter.cs",
+              "RelativeToolTip": "Services\\DefaultStringFormatter.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAABgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T13:44:25.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainFeedProcessor.cs",
+              "DocumentMoniker": "D:\\Scripts\\PublicTracker\\StarCitizenTracker\\Processor\\MainFeedProcessor.cs",
+              "RelativeDocumentMoniker": "Processor\\MainFeedProcessor.cs",
+              "ToolTip": "D:\\Scripts\\PublicTracker\\StarCitizenTracker\\Processor\\MainFeedProcessor.cs",
+              "RelativeToolTip": "Processor\\MainFeedProcessor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T13:22:41.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "config.txt",
               "DocumentMoniker": "D:\\Scripts\\PublicTracker\\StarCitizenTracker\\config.txt",
               "RelativeDocumentMoniker": "config.txt",
@@ -47,7 +107,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "LogMonitorService.cs",
               "DocumentMoniker": "D:\\Scripts\\PublicTracker\\StarCitizenTracker\\Services\\LogMonitorService.cs",
               "RelativeDocumentMoniker": "Services\\LogMonitorService.cs",
@@ -60,7 +120,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Config.cs",
               "DocumentMoniker": "D:\\Scripts\\PublicTracker\\StarCitizenTracker\\Services\\Config.cs",
               "RelativeDocumentMoniker": "Services\\Config.cs",
@@ -69,32 +129,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-10T10:39:12.13Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MainFeedProcessor.cs",
-              "DocumentMoniker": "D:\\Scripts\\PublicTracker\\StarCitizenTracker\\Services\\MainFeedProcessor.cs",
-              "RelativeDocumentMoniker": "Services\\MainFeedProcessor.cs",
-              "ToolTip": "D:\\Scripts\\PublicTracker\\StarCitizenTracker\\Services\\MainFeedProcessor.cs",
-              "RelativeToolTip": "Services\\MainFeedProcessor.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAC8AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T10:21:50.391Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SecondaryFeedProcessor.cs",
-              "DocumentMoniker": "D:\\Scripts\\PublicTracker\\StarCitizenTracker\\Services\\SecondaryFeedProcessor.cs",
-              "RelativeDocumentMoniker": "Services\\SecondaryFeedProcessor.cs",
-              "ToolTip": "D:\\Scripts\\PublicTracker\\StarCitizenTracker\\Services\\SecondaryFeedProcessor.cs",
-              "RelativeToolTip": "Services\\SecondaryFeedProcessor.cs",
-              "ViewState": "AgIAAKQAAAAAAAAAAAAYwMAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T10:18:10.309Z",
               "EditorCaption": ""
             }
           ]

@@ -22,11 +22,15 @@ namespace StarCitizenTracker.Services
 
         public void ProcessLine(string line)
         {
+            //------------------------ UPDATE DATE AND TIME ------------------------
+
             var timeMatch = Regex.Match(line, @"^<[^>]+>");
             if (timeMatch.Success)
             {
                 feedProcessor.UpdateDateAndTime(timeMatch.Value);
             }
+
+            //------------------------ PLAYER INVENTORY ------------------------
 
             if (playerBeingCorpsified != null && line.Contains("Adding non kept item"))
             {
@@ -47,6 +51,8 @@ namespace StarCitizenTracker.Services
                 collectedItems.Clear();
             }
 
+            //------------------------ KILL FEED ------------------------
+
             if (TrackerConfig.Instance.TrackKillFeed && Regex.IsMatch(line, @"\bkilled\b", RegexOptions.IgnoreCase))
             {
                 var killer = ExtractMatch(line, @"killed by '([^']+)'");
@@ -57,6 +63,9 @@ namespace StarCitizenTracker.Services
 
                 feedProcessor.AddMainLine(killer, victim, weapon, damageType);
             }
+
+            //------------------------ NEARBY PLAYER DEATHS ------------------------
+
             else if (TrackerConfig.Instance.TrackNearbyDeaths && Regex.IsMatch(line, @"\[Notice\].*\[ACTOR STATE\].*Player '([^']+)'.*IsCorpseEnabled:", RegexOptions.IgnoreCase))
             {
                 var playerName = ExtractMatch(line, @"Player '([^']+)'");
@@ -64,6 +73,9 @@ namespace StarCitizenTracker.Services
 
                 feedProcessor.AddMainLine(playerName, "Corpse", corpseStatus.Trim(), "Death");
             }
+
+            //------------------------ NEARBY DEAD PLAYER HAS RESPAWNED ------------------------
+
             else if (TrackerConfig.Instance.TrackNearbyDeaths && Regex.IsMatch(line, @"\[Notice\].*\[ACTOR STATE\].*Player '([^']+)'.*Running corpsify for corpse", RegexOptions.IgnoreCase))
             {
                 var playerName = ExtractMatch(line, @"Player '([^']+)'");

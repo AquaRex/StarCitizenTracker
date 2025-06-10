@@ -12,6 +12,7 @@ namespace StarCitizenTracker.Services
 
         public FormattedStrings FormatStrings(string killer, string victim, string weapon, string damageType)
         {
+            //------------------------ PLAYER KILLED THEMSELVES ------------------------
             if (killer == victim)
             {
                 return new FormattedStrings
@@ -22,10 +23,14 @@ namespace StarCitizenTracker.Services
                     SecondaryColors = new[] { weaponColor }
                 };
             }
+
+            //------------------------ TIMER FOR PATTERN DETECTION ------------------------
             else
             {
                 if (victim == "Corpse")
                 {
+
+                    //------------------------ DIED IN SAFEZONE ------------------------
                     if (weapon == "IsCorpseEnabled: No")
                     {
                         return new FormattedStrings
@@ -38,7 +43,9 @@ namespace StarCitizenTracker.Services
                     }
                     else
                     {
-                        if(weapon == "IsCorpseEnabled: Yes, there is no local inventory")
+
+                        //------------------------ DEAD WITH CORPSE BUT NO INVENTORY ------------------------
+                        if (weapon == "IsCorpseEnabled: Yes, there is no local inventory")
                         {
                             return new FormattedStrings
                             {
@@ -48,6 +55,8 @@ namespace StarCitizenTracker.Services
                                 SecondaryColors = new[] { weaponColor }
                             };
                         }
+
+                        //------------------------ DEAD WITH CORSE AND LOOT ------------------------
                         else
                         {
                             return new FormattedStrings
@@ -60,6 +69,8 @@ namespace StarCitizenTracker.Services
                         }
                     }
                 }
+
+                //------------------------ PLAYER RESPAWNED ------------------------
                 if (victim == "Corpsified")
                 {
                     return new FormattedStrings
@@ -70,6 +81,8 @@ namespace StarCitizenTracker.Services
                         SecondaryColors = new[] { weaponColor }
                     };
                 }
+
+                //------------------------ KILLED BY CRASH / COLLISION ------------------------
                 if (damageType == "Crash")
                 {
                     return new FormattedStrings
@@ -80,6 +93,8 @@ namespace StarCitizenTracker.Services
                         SecondaryColors = new[] { weaponColor }
                     };
                 }
+
+                //------------------------ NORMAL KILLED / KILLED BY ------------------------
                 else
                 {
                     return new FormattedStrings

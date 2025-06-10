@@ -98,8 +98,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\DefaultIconRenderer.cs" />
     <Compile Include="Services\DefaultStringFormatter.cs" />
-    <Compile Include="Services\SecondaryFeedProcessor.cs" />
-    <Compile Include="Services\MainFeedProcessor.cs" />
+    <Compile Include="Processor\SecondaryFeedProcessor.cs" />
+    <Compile Include="Processor\MainFeedProcessor.cs" />
     <Compile Include="Services\LocationIDConverter.cs" />
     <Compile Include="Services\StartupDebugLines.cs" />
     <EmbeddedResource Include="Forms\DateAndTimeDisplay.resx">

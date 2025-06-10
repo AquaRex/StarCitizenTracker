@@ -22,6 +22,9 @@ namespace StarCitizenTracker.Models
         private string playerBeingCorpsified = null;
         private List<string> collectedItems = new List<string>();
 
+
+        //------------------------ START PROCESSOR ------------------------
+
         public void StartProcessor(MainLogFeed mainForm)
         {
             mainLogFeed = mainForm;
@@ -47,7 +50,7 @@ namespace StarCitizenTracker.Models
             startupDebugLines.InitializeStartupLines(this);
         }
 
-
+        //------------------------ PROCESS CONSOLE LINE ------------------------
 
         public void ProcessLine(string line)
         {
@@ -55,27 +58,35 @@ namespace StarCitizenTracker.Models
             secondaryFeedProcessor.ProcessLine(line);
         }
 
-
+        //------------------------ UPDATE DATE AND TIME ------------------------
 
         public void UpdateDateAndTime(string dateAndTime)
         {
             dateAndTimeDisplay.UpdateDateAndTime(dateAndTime);
         }
 
+        //------------------------ MAIN KILL FEED LINE ------------------------
+
         public void AddMainLine(string killer, string victim, string weapon, string damageType)
         {
             mainLogFeed.AddLine(killer, victim, weapon, damageType);
         }
+
+        //------------------------ SECONDARY FEED LINE ------------------------
 
         public void AddSecondaryLine(string formattedText, Color defaultColor)
         {
             secondaryForm.AddLine(formattedText, defaultColor);
         }
 
+        //------------------------ UPDATE INVENTORY ------------------------
+
         public void UpdateInventory(string corpseStatus, List<string> items)
         {
             inventoryLogFeed.UpdateInventory(corpseStatus, items);
         }
+
+        //------------------------ DISPOSE ------------------------
 
         public void Dispose()
         {
