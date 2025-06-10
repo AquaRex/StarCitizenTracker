@@ -1,0 +1,17 @@
+D:\Scripts\StarCitizenTracker\bin\Release\StarCitizenTracker.exe.config
+D:\Scripts\StarCitizenTracker\bin\Release\StarCitizenTracker.exe
+D:\Scripts\StarCitizenTracker\bin\Release\StarCitizenTracker.pdb
+D:\Scripts\StarCitizenTracker\bin\Release\Newtonsoft.Json.dll
+D:\Scripts\StarCitizenTracker\bin\Release\Newtonsoft.Json.xml
+D:\Scripts\StarCitizenTracker\obj\Release\StarCitizenTracker.csproj.AssemblyReference.cache
+D:\Scripts\StarCitizenTracker\obj\Release\StarCitizenTracker.Forms.DateAndTimeDisplay.resources
+D:\Scripts\StarCitizenTracker\obj\Release\StarCitizenTracker.Forms.MainLogFeed.resources
+D:\Scripts\StarCitizenTracker\obj\Release\StarCitizenTracker.Forms.InventoryLogFeed.resources
+D:\Scripts\StarCitizenTracker\obj\Release\StarCitizenTracker.Forms.SecondaryLogFeed.resources
+D:\Scripts\StarCitizenTracker\obj\Release\StarCitizenTracker.Properties.Resources.resources
+D:\Scripts\StarCitizenTracker\obj\Release\StarCitizenTracker.csproj.GenerateResource.cache
+D:\Scripts\StarCitizenTracker\obj\Release\StarCitizenTracker.csproj.CoreCompileInputs.cache
+D:\Scripts\StarCitizenTracker\obj\Release\StarCiti.658397BC.Up2Date
+D:\Scripts\StarCitizenTracker\obj\Release\StarCitizenTracker.exe
+D:\Scripts\StarCitizenTracker\obj\Release\StarCitizenTracker.pdb
+D:\Scripts\StarCitizenTracker\obj\Release\StarCitizenTracker.Forms.TrackerWindow.resources

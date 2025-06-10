@@ -1,0 +1,14 @@
+D:\Scripts\StarCitizenTracker\obj\Debug\StarCitizenTracker.csproj.AssemblyReference.cache
+D:\Scripts\StarCitizenTracker\obj\Debug\StarCitizenTracker.Forms.MainLogFeed.resources
+D:\Scripts\StarCitizenTracker\obj\Debug\StarCitizenTracker.Properties.Resources.resources
+D:\Scripts\StarCitizenTracker\obj\Debug\StarCitizenTracker.csproj.GenerateResource.cache
+D:\Scripts\StarCitizenTracker\obj\Debug\StarCitizenTracker.csproj.CoreCompileInputs.cache
+D:\Scripts\StarCitizenTracker\bin\Debug\StarCitizenTracker.exe.config
+D:\Scripts\StarCitizenTracker\bin\Debug\StarCitizenTracker.exe
+D:\Scripts\StarCitizenTracker\bin\Debug\StarCitizenTracker.pdb
+D:\Scripts\StarCitizenTracker\bin\Debug\Newtonsoft.Json.dll
+D:\Scripts\StarCitizenTracker\bin\Debug\Newtonsoft.Json.xml
+D:\Scripts\StarCitizenTracker\obj\Debug\StarCiti.658397BC.Up2Date
+D:\Scripts\StarCitizenTracker\obj\Debug\StarCitizenTracker.exe
+D:\Scripts\StarCitizenTracker\obj\Debug\StarCitizenTracker.pdb
+D:\Scripts\StarCitizenTracker\obj\Debug\StarCitizenTracker.Forms.SecondaryLogFeed.resources
