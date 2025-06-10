@@ -52,7 +52,7 @@ namespace StarCitizenTracker.Services
                 var victim = ExtractMatch(line, @"Kill: '([^']+)'");
                 var weapon = ExtractMatch(line, @"using '([^']+)'");
                 var damageType = ExtractMatch(line, @"damage type '([^']+)'");
-                if (victim.Contains("_NPC_")) return;
+                if (victim.Contains("_NPC_") || victim.Contains("_PU_")) return;
 
                 feedProcessor.AddMainLine(killer, victim, weapon, damageType);
             }
