@@ -1,0 +1,42 @@
+######################################################################
+################ Configuration for StarCitizenTracker ################
+######################################################################
+
+# ---------------- FILE PATH TO GAME.LOG ---------------- #
+
+LogFilePath=D:\Program Files\Roberts Space Industries\StarCitizen\LIVE\Game.log
+
+
+# ---------------- TRACK KILLS / WHO KILLED YOU?
+
+TrackKillFeed=true
+
+
+# ---------------- TRACK NEARBY PLAYER DEATHS ( SAME SERVER )
+
+TrackNearbyDeaths=true
+
+
+# ---------------- TRACK NEARBY PLAYER DEATH INVENTORY ( TrackNearbyDeaths needs to be true for this to work )
+
+TrackNearbyInventory=true
+
+
+# ---------------- TRACK NPC KILLS / IF KILLED BY NPC
+
+TrackNPCKills=true
+
+
+# ---------------- TRACK NEARBY SHIP ATTACKS / DESTRUCTIONS
+
+TrackShipAttacks=true
+
+
+# ---------------- TRACK NEARBY PLAYER MOVEMENTS ( Appears to log name of player if the server does a correction on your game clint for their movement, not accurate)
+
+TrackNearbyMovements=true
+
+
+# ---------------- TRACK NEARBY OBJECT DETACHMENTS ( such as UI markers, players -> elevator etc. ) - Inaccurate, Can get spammed with 'useless' information
+
+TrackNearObjectDetachment=false

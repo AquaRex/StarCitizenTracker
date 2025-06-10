@@ -6,6 +6,7 @@ using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using StarCitizenTracker.Interfaces;
 using StarCitizenTracker.Models;
+using StarCitizenTracker.Config;
 
 namespace StarCitizenTracker.Services
 {
@@ -110,7 +111,7 @@ namespace StarCitizenTracker.Services
 
             //------------------------ PLAYER RESPAWNED ------------------------
 
-            if (Regex.IsMatch(line, @"CSCPlayerPUSpawningComponent::UnregisterFromExternalSystems.*lost reservation for spawnpoint", RegexOptions.IgnoreCase))
+            if (TrackerConfig.Instance.TrackNearbyDeaths && Regex.IsMatch(line, @"CSCPlayerPUSpawningComponent::UnregisterFromExternalSystems.*lost reservation for spawnpoint", RegexOptions.IgnoreCase))
             {
                 var playerName = ExtractMatch(line, @"Player '([^']+)'");
                 var spawnpoint = ExtractMatch(line, @"lost reservation for spawnpoint ([^\s\[]+)");
@@ -121,7 +122,7 @@ namespace StarCitizenTracker.Services
 
             //------------------------ OBJECT DETACHMENT EVENTS ------------------------
 
-            else if (Regex.IsMatch(line, @"CEntity::OnOwnerRemoved.*unblock removal of parent", RegexOptions.IgnoreCase))
+            else if (TrackerConfig.Instance.TrackNearObjectDetachment && Regex.IsMatch(line, @"CEntity::OnOwnerRemoved.*unblock removal of parent", RegexOptions.IgnoreCase))
             {
                 var matches = Regex.Matches(line, @"name = ""([^""]+)""");
                 var playerName = matches.Count > 0 ? matches[0].Groups[1].Value : "Unknown";
@@ -131,7 +132,7 @@ namespace StarCitizenTracker.Services
 
             //------------------------ MARK NEAREST HOSPITAL ------------------------
 
-            else if (Regex.IsMatch(line, @"\[Notice\].*\[ACTOR STATE\].*Player '([^']+)'.*DoesLocationContainHospital: Nearby hospital", RegexOptions.IgnoreCase))
+            else if (TrackerConfig.Instance.TrackNearbyDeaths && Regex.IsMatch(line, @"\[Notice\].*\[ACTOR STATE\].*Player '([^']+)'.*DoesLocationContainHospital: Nearby hospital", RegexOptions.IgnoreCase))
             {
                 var playerName = ExtractMatch(line, @"Player '([^']+)'");
                 var hospitalLocation = ExtractMatch(line, @"(?<=DoesLocationContainHospital: Nearby hospital\s)[^\.]+");
@@ -140,7 +141,7 @@ namespace StarCitizenTracker.Services
 
             //------------------------ NPC KILLS ------------------------
 
-            else if (Regex.IsMatch(line, @"\bkilled\b", RegexOptions.IgnoreCase))
+            else if (TrackerConfig.Instance.TrackNPCKills && Regex.IsMatch(line, @"\bkilled\b", RegexOptions.IgnoreCase))
             {
                 var killer = ExtractMatch(line, @"killed by '([^']+)'");
                 var victim = ExtractMatch(line, @"Kill: '([^']+)'");
@@ -152,7 +153,7 @@ namespace StarCitizenTracker.Services
 
             //------------------------ IGNORING COLLISION DAMAGE ( NEARBY COLLISION EVENT ) ------------------------
 
-            else if (Regex.IsMatch(line, @"\[Notice\].*\<Body Hit Discarded>.*Actor '([^']+)'.*ignoring collision damage", RegexOptions.IgnoreCase))
+            else if (TrackerConfig.Instance.TrackShipAttacks && Regex.IsMatch(line, @"\[Notice\].*\<Body Hit Discarded>.*Actor '([^']+)'.*ignoring collision damage", RegexOptions.IgnoreCase))
             {
                 var playerName = ExtractMatch(line, @"Actor '([^']+)'");
                 var collider = ExtractMatch(line, @"from '([^']+)'");
@@ -162,7 +163,7 @@ namespace StarCitizenTracker.Services
 
             //------------------------ NEARBY SHIP DESTROYED ------------------------
 
-            else if (Regex.IsMatch(line, @"<Vehicle Destruction>.*caused by", RegexOptions.IgnoreCase))
+            else if (TrackerConfig.Instance.TrackShipAttacks && Regex.IsMatch(line, @"<Vehicle Destruction>.*caused by", RegexOptions.IgnoreCase))
             {
                 var vehicleName = ExtractMatch(line, @"Vehicle '([^']+)'");
                 var zone = ExtractMatch(line, @"in zone '([^']+)'");
@@ -173,7 +174,7 @@ namespace StarCitizenTracker.Services
             //------------------------ ACTOR STALL, NEARBY PLAYER DESYNCED ------------------------
             // Seems to trigger from players that potentially are on player screen and needs to be resynced
             // Could mean a player is very close to our location!
-            else if (Regex.IsMatch(line, @"<Actor stall> Actor stall detected", RegexOptions.IgnoreCase))
+            else if (TrackerConfig.Instance.TrackNearbyMovements && Regex.IsMatch(line, @"<Actor stall> Actor stall detected", RegexOptions.IgnoreCase))
             {
                 var playerName = ExtractMatch(line, @"Player: ([^,]+),");
                 var stallType = ExtractMatch(line, @"Type: ([^,]+),");
@@ -186,22 +187,27 @@ namespace StarCitizenTracker.Services
 
         private void InitializeCommandPatterns()
         {
+            commandPatterns = new List<CommandPattern>();
 
             //------------------------ COMMAND PATTERNS ------------------------
 
-            commandPatterns = new List<CommandPattern>
+            if (TrackerConfig.Instance.TrackNearbyDeaths && TrackerConfig.Instance.TrackNearbyInventory)
             {
-
-            //------------------------ PLAYER ATTACKED ANOTHER SHIP ------------------------
-                new CommandPattern(
+                commandPatterns.Add(new CommandPattern(
                     regex: @"\[OnHandleHit\] Fake hit FROM (?<attacker>[^ ]+) TO (?<target>[^ ]+)\. Being sent to child (?<child>[^ \[\]]+)",
                     eventKeyGroups: new[] { "target" },
                     outputFormat: "#red{{attacker}} attacked #white{{target}} with crew: ( #red{{child}} )",
                     outputColor: Color.FromArgb(255, 165, 0),
                     aggregatedKeys: new[] { "child" }
-                ),
+                ));
+            }
 
-            };
+
+            // if (TrackerConfig.Instance.SomeOtherFlag)
+            // {
+            //     commandPatterns.Add(...)
+            // }
+
         }
 
         //------------------------ TIMER FOR PATTERN DETECTION ------------------------

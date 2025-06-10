@@ -1,6 +1,7 @@
 ﻿using StarCitizenTracker.Models;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
+using StarCitizenTracker.Config;
 
 namespace StarCitizenTracker.Services
 {
@@ -46,7 +47,7 @@ namespace StarCitizenTracker.Services
                 collectedItems.Clear();
             }
 
-            if (Regex.IsMatch(line, @"\bkilled\b", RegexOptions.IgnoreCase))
+            if (TrackerConfig.Instance.TrackKillFeed && Regex.IsMatch(line, @"\bkilled\b", RegexOptions.IgnoreCase))
             {
                 var killer = ExtractMatch(line, @"killed by '([^']+)'");
                 var victim = ExtractMatch(line, @"Kill: '([^']+)'");
@@ -56,14 +57,14 @@ namespace StarCitizenTracker.Services
 
                 feedProcessor.AddMainLine(killer, victim, weapon, damageType);
             }
-            else if (Regex.IsMatch(line, @"\[Notice\].*\[ACTOR STATE\].*Player '([^']+)'.*IsCorpseEnabled:", RegexOptions.IgnoreCase))
+            else if (TrackerConfig.Instance.TrackNearbyDeaths && Regex.IsMatch(line, @"\[Notice\].*\[ACTOR STATE\].*Player '([^']+)'.*IsCorpseEnabled:", RegexOptions.IgnoreCase))
             {
                 var playerName = ExtractMatch(line, @"Player '([^']+)'");
                 var corpseStatus = ExtractMatch(line, @"(IsCorpseEnabled: [^\.]+)");
 
                 feedProcessor.AddMainLine(playerName, "Corpse", corpseStatus.Trim(), "Death");
             }
-            else if (Regex.IsMatch(line, @"\[Notice\].*\[ACTOR STATE\].*Player '([^']+)'.*Running corpsify for corpse", RegexOptions.IgnoreCase))
+            else if (TrackerConfig.Instance.TrackNearbyDeaths && Regex.IsMatch(line, @"\[Notice\].*\[ACTOR STATE\].*Player '([^']+)'.*Running corpsify for corpse", RegexOptions.IgnoreCase))
             {
                 var playerName = ExtractMatch(line, @"Player '([^']+)'");
 

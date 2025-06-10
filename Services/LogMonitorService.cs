@@ -9,7 +9,6 @@ namespace StarCitizenTracker
     {
         private FileSystemWatcher watcher;
         private Timer pollTimer;
-        private TrackerConfig config;
         private string logPath;
         private long lastFileSize = 0;
 
@@ -17,8 +16,7 @@ namespace StarCitizenTracker
 
         public void Start()
         {
-            config = new TrackerConfig();
-            logPath = config.GetLogFilePath();
+            logPath = TrackerConfig.Instance.GetLogFilePath();
             SetupLogWatcher();
         }
 
