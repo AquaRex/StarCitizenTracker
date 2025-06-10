@@ -61,7 +61,7 @@ Press the "Lock" button to lock them in place. This hides the background and cle
 It's now ready to read your Game.Log file, and is awaiting any changes to it.
 <br>
 <h2>How to close</h2>
-Find you Windows Taskbar.<br>
+Find your Windows Taskbar Tray<br>
 Click the arrow up to reveal the Tray Icons<br>
 There should be a Tray Icon that looks like a skull in there<br>
 Right click it, and then click on Exit to close<br>
