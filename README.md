@@ -1,6 +1,6 @@
 <h1 align="center" id="title">Star Citizen Tracker</h1>
   
-<h2>Features</h2>
+<h1>Features</h1>
 
 <h3> Kill Feed: </h3>
 <h5>Who killed you, and who you killed</h5>
@@ -53,7 +53,7 @@
 <h5>Adds a clock window showing the date & time of the last console log received</h5>
 
 <br><br>
-<h2>How to use</h2>
+<h1>🚦How to use🚦</h1>
 Once you open it, a few windows will appear with some text to show you how it will look.<br>
 You can close the windows you don't want by pressing ( X )<br>
 Click and drag the windows to where you want them.<br>
@@ -62,9 +62,9 @@ It's now ready to read your Game.Log file, and is awaiting any changes to it.
 
 
 <br><br>
-<h2>🔨 Can I get banned for using this?</h2>
+<h1>🔨 Can I get banned for using this?</h1>
 
-<h3>TLDR: No </h3> 
+<h2>TLDR: No </h2> 
 This application ONLY reads from the game's own Game.Log ( console output ) file.<br>
 All the information this application is pulling is publically avaliable in the in-game console.<br>
 The application is simply sorting and assuming functionality of console outputs to make it more readable.<br><br>
@@ -73,9 +73,6 @@ And any updates to Star Citizen may change how the console prints and what it pr
 
 
 <br><br>
-<h2>🛡️ License:</h2>
+<h1>🛡️ License:</h1>
 
 This project is licensed under the GNU GENERAL PUBLIC LICENSE
-
-
-
