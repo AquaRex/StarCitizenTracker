@@ -52,6 +52,14 @@
 <h3> Server Time </h3>
 <h5>Adds a clock window showing the date & time of the last console log received</h5>
 
+<br><br>
+<h2>How to use</h2>
+Once you open it, a few windows will appear with some text to show you how it will look.<br>
+You can close the windows you don't want by pressing ( X )<br>
+Click and drag the windows to where you want them.<br>
+Press the "Lock" button to lock them in place. This hides the background and clears the text.<br>
+It's now ready to read your Game.Log file, and is awaiting any changes to it.
+
 
 <br><br>
 <h2>🔨 Can I get banned for using this?</h2>

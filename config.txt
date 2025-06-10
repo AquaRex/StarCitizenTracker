@@ -4,7 +4,7 @@
 
 # ---------------- FILE PATH TO GAME.LOG ---------------- #
 
-LogFilePath=D:\Program Files\Roberts Space Industries\StarCitizen\LIVE\Game.log
+LogFilePath=C:\Program Files\Roberts Space Industries\StarCitizen\LIVE\Game.log
 
 
 # ---------------- TRACK KILLS / WHO KILLED YOU?
