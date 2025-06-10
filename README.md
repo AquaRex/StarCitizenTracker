@@ -59,6 +59,12 @@ You can close the windows you don't want by pressing ( X )<br>
 Click and drag the windows to where you want them.<br>
 Press the "Lock" button to lock them in place. This hides the background and clears the text.<br>
 It's now ready to read your Game.Log file, and is awaiting any changes to it.
+<br>
+<h2>How to close</h2>
+Find you Windows Taskbar.<br>
+Click the arrow up to reveal the Tray Icons<br>
+There should be a Tray Icon that looks like a skull in there<br>
+Right click it, and then click on Exit to close<br>
 
 
 <br><br>
