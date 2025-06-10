@@ -54,6 +54,7 @@
 
 <br><br>
 <h1>🚦How to use🚦</h1>
+Make sure to configure it using the config.txt file, before use!
 Once you open it, a few windows will appear with some text to show you how it will look.<br>
 You can close the windows you don't want by pressing ( X )<br>
 Click and drag the windows to where you want them.<br>
